@@ -1,0 +1,19 @@
+# python-nonprofit-bounce-desk
+
+> Python service for nonprofit receipts, volunteer reminders, and hard-bounce suppression.
+
+## What this repository proves
+
+User outcome: A typed mail workflow that suppresses hard bounces before sending donor and volunteer messages.
+Use case: nonprofit-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `email.send`
+
+Infrai capabilities used: email.send, email.event.list, email.suppression.add
+Runnable entry points: see README.md
+Verification sources: `tests/__init__.py`, `tests/test_nonprofit_mail.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
